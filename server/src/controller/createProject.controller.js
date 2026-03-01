@@ -1,12 +1,13 @@
 const Project = require("../model/project.model")
-const {uploadProjectImage} = require("../services/storage.services")
+const { uploadProjectImage } = require("../services/storage.services")
 
 
 
-async function createAdminProject(req,res){
-    const {title,shortDescription,description,image,githubLink,category} = req.body;
+async function createAdminProject(req, res) {
+    const { title, shortDescription, description, image, githubLink, category } = req.body;
 
-    if (!title && !shortDescription && !description && !image) {
+    try {
+        if (!title && !shortDescription && !description && !image) {
             return res.status(400).json({
                 message: "ALL Fild Required"
             });
@@ -17,24 +18,27 @@ async function createAdminProject(req,res){
             title,
             shortDescription,
             description,
-            image : (await result).url,
+            image: (await result).url,
             githubLink,
             category,
         })
         return res.status(201).json({
-            message:"Project Created",
-            project:{
-                id:project._id,
-                title:project.title,
-                shortDescription:project.shortDescription,
-                description:project.description,
-                image:project.image,
-                githubLink:project.githubLink,
-                category:project.category
-            }   
+            message: "Project Created",
+            project: {
+                id: project._id,
+                title: project.title,
+                shortDescription: project.shortDescription,
+                description: project.description,
+                image: project.image,
+                githubLink: project.githubLink,
+                category: project.category
+            }
         })
 
-     
+    } catch (error) {
+        console.log("Create project error ", error)
+    }
+
 }
 
 

@@ -19,7 +19,7 @@ const authAdminmiddlewares = (req, res, next) => {
         next()
     } catch (error) {
         console.log("Login Error ",error);  
-        return res.status(401).json({ message: "Invalid Token" })
+        return res.status(401).json({ message: "Unauthorized" })
     }
 }
 

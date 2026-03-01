@@ -1,4 +1,4 @@
-const e = require("express");
+
 const jwt = require("jsonwebtoken")
 
 async function adminLogin(req, res) {
@@ -22,7 +22,7 @@ async function adminLogin(req, res) {
 async function adminLoguot (req,res){
     res.clearCookie("token")
     res.status(200).json({
-        message:"User Logged out successfully"
+        message:"Admin Logged out successfully"
     })
 }
 
