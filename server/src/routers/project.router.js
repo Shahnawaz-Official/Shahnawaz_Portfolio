@@ -11,7 +11,7 @@ const upload = multer({storage:multer.memoryStorage()})
 
 
 router.post("/upload",authAdminmiddlewares,upload.single("image"),createAdminProject)
-router.post("/delete/:id",authAdminmiddlewares,adminDeleteProject)
+router.delete("/delete/:id",authAdminmiddlewares,adminDeleteProject)
 
 
 module.exports = router
