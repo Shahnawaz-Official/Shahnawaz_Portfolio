@@ -11,7 +11,7 @@ async function getAllproject(req,res){
             console.log("Get all project Error ",error);
             res.status(500).json({
                 success: false,
-                message:"Server Error "
+                message:"Project Fatch Server Error "
             })
         }
             

@@ -21,7 +21,7 @@ app.use("/api/project",getAllRoute)
 
 // certificate
 app.use("/api/admin/certificate",certificateRoute)
-
+app.use("/api/certificate",certificateRoute)
 
 
 module.exports = app
