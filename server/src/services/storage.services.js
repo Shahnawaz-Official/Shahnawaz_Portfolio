@@ -14,4 +14,16 @@ async function uploadProjectImage(file) {
     return result;
 }
 
-module.exports = { uploadProjectImage };
+async function uploadCertificateImage(file){
+    const uploadResult = await imageKitClient.files.upload({
+        file:file,
+        fileName:"certificate_image_" + Date.now(),
+        folder:"portfolio-Backend/certificate"
+    })
+    return uploadResult;
+}
+
+module.exports = { 
+    uploadProjectImage ,
+    uploadCertificateImage
+};
