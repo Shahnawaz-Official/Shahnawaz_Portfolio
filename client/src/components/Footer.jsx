@@ -2,6 +2,7 @@ import React from "react";
 
 const Footer = () => {
 
+
   const menuItems = [
     "Home",
     "About",
@@ -62,14 +63,14 @@ const Footer = () => {
           {/* Right Section */}
           <div className="flex justify-center md:justify-end items-center gap-6 text-2xl">
             <a
-              href="#"
+              href="https://github.com/Shahnawaz-Official"
               className="hover:text-[#9FF934] transition duration-300"
             >
               <i className="ri-github-fill"></i>
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/md-shahnawaz-ms/"
               className="hover:text-[#9FF934] transition duration-300"
             >
               <i className="ri-linkedin-box-fill"></i>
