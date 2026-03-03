@@ -9,6 +9,7 @@ const Tools = () => {
     { title: "Postman", image: "/images/postman.png" },
     { title: "MongoDB Compass", image: "/images/mongodb.png" },
     { title: "Redux", image: "/images/redux.png" },
+    { title: "IntelliJ", image: "/images/Intellij.png" },
     
   ];
 

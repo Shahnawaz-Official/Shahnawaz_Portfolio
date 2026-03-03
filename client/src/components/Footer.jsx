@@ -9,7 +9,7 @@ const Footer = () => {
     "Skills",
     "Projects",
     "Certificates",
-    "Services",
+    "Tools",
     "Contact"
   ];
 

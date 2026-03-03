@@ -50,7 +50,7 @@ I am currently focused on improving my skills in the MERN stack and building rea
 
           <p>
             <span className="text-transparent bg-clip-text text-xl bg-linear-to-r from-[#9FF934] via-[#6EE545] to-[#30CB59] mb-8 font-semibold">Age:</span>{" "}
-            20+
+            20 Years
           </p>
 
           <p>

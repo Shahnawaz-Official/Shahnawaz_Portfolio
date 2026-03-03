@@ -3,20 +3,20 @@ import React from "react";
 const educationData = [
     {
       year: "22024 - 2027",
-      title: "BCA (Bachelor of Computer Applications)",
+      title: "BCA (Full Stack Development)",
       institute: "Suresh Gyan Vihar University",
       details: "I have learned Web Development, MERN Stack, and worked on real-world projects."
     },
     {
       year: "2019-2021",
-      title: "Class 12th (BCECEB)",
+      title: "Intermediate of Arts. (BSEB)",
       institute: "Zila School Darbhanga",
       details: "Completed Higher Secondary education with Arts stream."
     },
     {
     year: "2017-2019",
-    title: "Class 10th (BCECEB)",
-    institute: "Rajkiyakrit Basudeo Mishra High School, Simar",
+    title: "Matriculation (BSEB)",
+    institute: "Rajkiyakrit Basudeo Mishra High School, Simari",
     details: "Completed with strong academic foundation. "
   },
  

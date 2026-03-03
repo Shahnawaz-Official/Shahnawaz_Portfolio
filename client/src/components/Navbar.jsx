@@ -10,7 +10,7 @@ const Navbar = () => {
     "Skills",
     "Projects",
     "Certificates",
-    "Services",
+    "Tools",
     "Contact",
   ];
 
@@ -51,11 +51,11 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Hire Button */}
-          <button className="hidden lg:block cursor-pointer text-black px-6 py-2 rounded-lg font-semibold 
+          <a href="/contact" className="hidden lg:block cursor-pointer text-black px-6 py-2 rounded-lg font-semibold 
             bg-linear-to-r from-[#9FF934] via-[#6EE545] to-[#30CB59] 
             hover:scale-105 transition-all duration-300 shadow-lg">
             Hire Me
-          </button>
+          </a>
 
           {/* Mobile Hamburger */}
           <div
@@ -110,11 +110,11 @@ const Navbar = () => {
           ))}
 
           {/* Mobile Hire Button */}
-          <button className="mt-6 text-black px-4 py-3 rounded-xl font-semibold 
+          <a href="/contact" className="mt-6 text-black px-4 py-3 rounded-xl font-semibold 
             bg-linear-to-r from-[#9FF934] via-[#6EE545] to-[#30CB59] 
             hover:scale-105 transition-all cursor-pointer duration-300 shadow-lg">
             Hire Me
-          </button>
+          </a>
         </div>
       </div>
     </>

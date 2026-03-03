@@ -4,12 +4,17 @@ const cookieParser= require("cookie-parser")
 const authProjectRoute = require("./routers/project.router")
 const getAllRoute = require("./routers/allProject.router")
 const certificateRoute = require("./routers/certificate.router")
-
+const cors =  require("cors")
 
 
 const app = express();
 
-
+app.use(
+  cors({
+    origin: "http://localhost:5173", // frontend port (Vite)
+    credentials: true,
+  })
+);
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())

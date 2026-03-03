@@ -21,7 +21,7 @@ const ExploreMore = () => {
 {
   title: "Certificate",
   desc: "Professional certifications and achievements I’ve earned.",
-  link: "/certificate",
+  link: "/certificates",
 },
 {
   title: "Contact",

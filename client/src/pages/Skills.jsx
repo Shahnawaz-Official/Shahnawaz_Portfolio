@@ -14,6 +14,7 @@ const Skills = () => {
   { title: "GitHub", image: "/images/github.png" },
   { title: "Python", image: "/images/python.png" },
   { title: "AWS", image: "/images/aws.png" },
+  { title: "Java", image: "/images/java.png" },
 ];
 
   return (
@@ -22,7 +23,7 @@ const Skills = () => {
 
         {/* Heading */}
         <h2 className=" text-center  text-transparent bg-clip-text text-4xl bg-linear-to-r from-[#9FF934] via-[#6EE545] to-[#30CB59] mb-8 font-bold">
-          My Skills
+           Skills
         </h2>
 
         {/* Skills Grid */}

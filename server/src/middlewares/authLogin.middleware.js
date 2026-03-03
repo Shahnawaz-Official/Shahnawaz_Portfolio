@@ -1,28 +1,25 @@
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
 
 const authAdminmiddlewares = (req, res, next) => {
-    const token = req.cookies.token
+  const token = req.cookies.token;
 
-    if (!token) {
-        return res.status(401).json({ message: "Unauthorized" })
+  if (!token) {
+    return res.status(401).json({ message: "Unauthorized - No Token" });
+  }
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    if (decoded.role !== "admin") {
+      return res.status(403).json({
+        message: "You don't have access to ADD Project",
+      });
     }
 
-    try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET)
+    next();
+  } catch (error) {
+    return res.status(401).json({ message: "Invalid Token" });
+  }
+};
 
-         if (decoded.role !== "admin") {
-            return res.status(403).json({
-                message: "You don't have access to ADD Project "
-            });
-        }
-
-        next()
-    } catch (error) {
-        console.log("Login Error ",error);  
-        return res.status(401).json({ message: "Unauthorized" })
-    }
-}
-
-module.exports = {
-     authAdminmiddlewares
-}
+module.exports = { authAdminmiddlewares };
