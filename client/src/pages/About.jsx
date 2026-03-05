@@ -11,16 +11,16 @@ function About() {
       <Profile />
       <Footer />
 
-      <div className="flex items-center absolute top-[86.5%]  right-8">
-        <a
-          className="mt-6 text-black px-4 py-3 rounded-xl font-semibold 
-            bg-linear-to-r from-[#9FF934] via-[#6EE545] to-[#30CB59] 
-            hover:scale-105 transition-all cursor-pointer duration-300 shadow-lg"
-          href="/login"
-        >
-          Only Admin
-        </a>
-      </div>
+     <div className="flex items-center absolute top-[79%] md:top-[86.5%] right-9">
+  <a
+    className="mt-6 text-black px-4 py-3 rounded-xl font-semibold 
+      bg-linear-to-r from-[#9FF934] via-[#6EE545] to-[#30CB59] 
+      hover:scale-105 transition-all cursor-pointer duration-300 shadow-lg"
+    href="/login"
+  >
+    Only Admin
+  </a>
+</div>
     </div>
   )
 }
