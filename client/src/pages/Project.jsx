@@ -9,7 +9,7 @@ function Project() {
 
   const fetchProjects = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/project/");
+      const res = await axios.get("https://potfolio-backend-pq7q.onrender.com/api/project/");
       setProjects(res.data.project); //  FIXED HERE
     } catch (error) {
       console.log(error);
@@ -24,7 +24,7 @@ function Project() {
   const handleDelete = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:3000/api/admin/project/delete/${id}`,
+        `https://potfolio-backend-pq7q.onrender.com/api/admin/project/delete/${id}`,
         { withCredentials: true }
       );
 

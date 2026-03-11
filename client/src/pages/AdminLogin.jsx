@@ -12,7 +12,7 @@ const AdminLogin = () => {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/admin/login",
+        "https://potfolio-backend-pq7q.onrender.com/api/admin/login",
         { email, password },
         {
           withCredentials: true, // ✅ IMPORTANT
